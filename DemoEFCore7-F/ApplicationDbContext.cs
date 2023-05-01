@@ -12,7 +12,9 @@ namespace DemoEFCore7_F
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             //base.OnConfiguring(optionsBuilder);
-            optionsBuilder.UseSqlServer("Server=MVELASQUEZ;Database=DemoEFCore;Integrated Security=True");
+            optionsBuilder.UseSqlServer("Server=MVELASQUEZ;Database=DemoEFCore;Integrated Security=True;TrustServerCertificate=True");
         }
+
+        public DbSet<Person> Persons { get; set; }
     }
 }

@@ -10,6 +10,6 @@ namespace DemoEFCore7_F
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public DateTime BirhDate { get; set; }
+        public DateTime BirthDate { get; set; }
     }
 }
